@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  background-color: rgb(243, 229, 216);
+  padding: 8% 0;
+}
+.row {
+  padding: 3%;
+  margin: 0 20%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 0 20px linen;
+  /* box-shadow: 1px 0 20px rgb(243, 229, 216); */
+}
+h2 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+h1 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+}
+
+/* Omelette Image */
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* Recipe Title */
+.main-head {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6rem;
+  margin: 3% 0;
+  color: hsl(24, 5%, 18%);
+}
+
+/* Recipe Summary */
+.summary {
+  font-size: 1.04rem;
+  /* opacity: 0.6; */
+  color: hsl(30, 0%, 40%);
+
+  margin-bottom: 4%;
+}
+
+/* Preparation time Section */
+.pretime {
+  background-color: rgb(256, 248, 252);
+  margin-top: 2%;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.pretime ul {
+  padding: 25px 0 0 25px;
+}
+
+.pretime ul > li {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 20px;
+  padding-left: 1rem;
+}
+
+.pretime ul > li strong {
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+  /* padding-left: 1rem; */
+}
+
+/* Ingredients time Section */
+.Ingredients {
+  margin-top: 2%;
+  padding: 30px 0;
+}
+
+.Ingredients ul {
+  padding: 25px 0 0 25px;
+}
+
+.Ingredients ul > li {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 20px;
+}
+.Ingredients ul > li p {
+  padding-left: 1rem;
+}
+
+/* Instructions time Section */
+.Instructions {
+  margin-top: 2%;
+  padding: 10px 0;
+}
+
+.Instructions ol {
+  padding: 25px 0 0 25px;
+  font-variant-numeric: lining-nums;
+}
+
+.Instructions ol > li {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 20px;
+}
+
+.Instructions ol > li p {
+  padding-left: 1rem;
+  font-size: 1.04rem;
+}
+
+.Instructions ol > li::marker {
+  color: brown;
+  font-weight: 600;
+  /* font-family: "Outfit", sans-serif; */
+  font-family:
+    "Roboto",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  /* font-variant-numeric: lining-nums; */
+}
+
+/* Nutrition time Section */
+.Nutrition {
+  margin-top: 2%;
+  padding: 10px 0;
+}
+
+.Nutrition p {
+  color: hsl(30, 10%, 34%);
+  margin-top: 20px;
+}
+
+.Nutrition table {
+  margin-top: 10px;
+  /* background-color: aqua; */
+  border-collapse: collapse;
+}
+
+.Nutrition table {
+  width: 100%;
+}
+.Nutrition table tr td {
+  border-bottom: 2px solid rgb(203, 201, 201);
+  color: hsl(30, 10%, 34%);
+  padding: 20px;
+}
+.Nutrition table tr:last-child td {
+  border-bottom: none;
+}
+.Nutrition table tr td > span {
+  color: hsl(14, 45%, 36%);
+  font-weight: 900;
+}
+
+/* Media query */
+@media screen and (max-width: 600px) {
+  .container {
+    background-color: white;
+    padding: 0;
+  }
+  .row {
+    padding: 0;
+    margin: 0;
+    /* background-color: white; */
+  }
+  .content {
+    padding: 0 8%;
+  }
+  .main-img {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .main-head {
+    font-size: 2.2rem;
+    line-height: 1;
+    margin: 20px 0;
+  }
+  .summary {
+    font-size: 0.98rem;
+  }
+  .pretime ul {
+    padding: 18px 0 0 25px;
+  }
+  .pretime ul > li {
+    line-height: 1.4;
+  }
+}
