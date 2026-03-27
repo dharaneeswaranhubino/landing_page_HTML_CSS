@@ -1,2 +1,2 @@
 project netlify url:
-https://simple-recipe-007.netlify.app/
+https://landing-page-html-css-chi.vercel.app/
